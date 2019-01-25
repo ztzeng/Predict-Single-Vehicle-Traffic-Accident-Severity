@@ -7,14 +7,13 @@ While traffic accidents have declined globally over the past few decades, they
 remain the leading cause of death for young adults and injure tens of millions of people
 every year. 
 
-From an economic standpoint, the United Kingdom Department of Transport (DofT) estimated the cost of all traffic accidents to be about £36 billion ($46.7
-billion) per year.
+From an economic standpoint, the United Kingdom Department of Transport (DofT) estimated the cost of all traffic accidents to be about £36 billion ($46.7 billion) per year.
 
-The motivation for this project is to understand the factors that contribute to accidents and use machine learning to predict accident severity level: slight, severe,
-and fatal. 
+The motivation for this project is to understand the factors that contribute to accidents and use machine learning to predict accident severity level: slight, severe, and fatal. 
 
 In this project, we used AWS S3 to store the data, then launched 10 AWS EC2(with replicated shards) to import data from S3 into MongoDB. 
 Lastly, we launched an AWS EMR to query data and do SparkML on the data.
+
 
 For the SparkML part, due to the following reasons, we built tree-based models and chose F1-score as the primary metric, recall
 as the optimizing metric:
