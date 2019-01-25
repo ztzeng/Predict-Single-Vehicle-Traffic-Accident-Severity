@@ -13,6 +13,7 @@ The motivation for this project is to understand the factors that contribute to 
 
 In this project, we used AWS S3 to store the data, then launched 10 AWS EC2(with replicated shards) to import data from S3 into MongoDB. 
 Lastly, we launched an AWS EMR to query data and do SparkML on the data.
+![Alt text](/overview.jpg?raw=true "Optional Title")
 
 
 For the SparkML part, due to the following reasons, we built tree-based models and chose F1-score as the primary metric, recall
